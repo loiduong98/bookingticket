@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Button } from 'antd';
 
+import {BrowserRouter, Switch} from 'react-router-dom';
+import { AdminTemplate } from './templates/AdminTemplate';
+import { HomeTemplate } from './templates/HomeTemplate';
+import Admin from './pages/Admin';
+import Home from './pages/Home';
+import MovieDetail from './pages/MovieDetail';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+      <AdminTemplate path="/admin" component={Admin} />
+      <HomeTemplate path="/phim/:maphim" component={MovieDetail}/>
+      <HomeTemplate path="/" component={Home} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
