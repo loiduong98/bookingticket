@@ -11,3 +11,38 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.trapezoid {
+	border-bottom: 50px solid #555;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	height: 0;
+  width: 55%;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0px 25px 11px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 25px 11px -4px rgba(0,0,0,0.75);
+box-shadow: 0px 25px 11px -4px rgba(0,0,0,0.75);
+
+}
+
+.ghe {
+  margin:5px;
+  background-color: rgb(88, 85, 86);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+}
+.gheDaDat {
+  cursor: no-drop;
+  background-color:black;
+  font-weight: bold;
+  font-size: 15px;
+}
+.gheVip {
+  background-color: orange;
+}
+.gheDangDat {
+  background-color: #2bec2b;
+  color: #fff;
+}

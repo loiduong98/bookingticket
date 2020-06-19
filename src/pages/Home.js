@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { qlPhimService } from "../services/quanlyPhimService";
+import {NavLink} from 'react-router-dom';
 
 export default function Home(props) {
   let [danhSachPhim, setDanhSachPhim] = useState([]);
@@ -25,6 +26,7 @@ export default function Home(props) {
           <div className="card-body">
             <h4 className="card-title">{phim.tenPhim}</h4>
             <p className="card-text">{phim.moTa.length > 100 ? phim.moTa.substr(0,100) + '...' : phim.moTa}</p>
+            <NavLink className="btn btn-success" to={`/phim/${phim.maPhim}`}>ĐẶT VÉ</NavLink>
           </div>
         </div>
       </div>
