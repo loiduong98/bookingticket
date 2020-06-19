@@ -11,6 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+// Select Ticket
+.selectContent {
+  padding: 25px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: -40px;
+  background: #fff;
+  width: 80%;
+  z-index: 2;
+  border: #00000014 1px solid;
+}
+.selectItem {
+  padding: 0;
+}
+.selectItem select {
+  width: 100%;
+  border: none;
+}
+.select-ticket {
+  position: relative;
+}
+
+.listPhim.container {
+  margin-top: 50px;
+}
+
+.selectItem.btn-buy button {
+  padding: 5px 50px;
+}
+
+//End select Ticket
+
 .trapezoid {
 	border-bottom: 50px solid #555;
 	border-left: 25px solid transparent;
@@ -45,4 +78,7 @@ box-shadow: 0px 25px 11px -4px rgba(0,0,0,0.75);
 .gheDangDat {
   background-color: #2bec2b;
   color: #fff;
+}
+ul.navbar-nav.mr-auto.mt-2.mt-lg-0 {
+  margin-left: 30%;
 }

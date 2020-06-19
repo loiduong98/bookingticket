@@ -31,5 +31,13 @@ class quanlyPhimService {
       },
     });
   };
+  dangKy = (thongTinNguoiDung) => {
+    return axios({
+      url: `${domain}/QuanLyNguoiDung/DangKy`,
+      method: "POST",
+      data: thongTinNguoiDung
+    })
+  }
+
 }
 export const qlPhimService = new quanlyPhimService();
